@@ -3,4 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import 'typo';
+@import 'normalize';
+@import 'base';
+@import 'grid';
+@import 'typography';
+@import 'colors';
+@import 'first';
+@import 'header';
