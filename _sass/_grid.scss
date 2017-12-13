@@ -1,9 +1,4 @@
 // SIMPLE GRID - SASS/SCSS
-
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
-
-// fonts
-$font-family: 'Lato', Helvetica, sans-serif;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-heavy: 700;
@@ -24,10 +19,11 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+ 	background-color: #f1f1f1;
+
 }
 
 * {
-  font-family: $font-family;
   color: $dark-grey;
   line-height: $font-height;
 }
@@ -59,9 +55,9 @@ h6 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 200;
-  line-height: 1.8;
+  line-height: 1;
 }
 
 .font-light {
