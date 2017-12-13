@@ -1,5 +1,9 @@
 {%include head.html%}
 
 <section>
+	<p>
+		{% if page.title %} {{ page.title }}
+		{% endif %}
+	</p>
 	{{ content }}
 </section>
