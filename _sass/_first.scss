@@ -2,13 +2,13 @@ $gutter: 20px;
 $half-gutter: 20px / 2;
 
 header {
-	height: 300px;
+	// header start
 
 	.head-items {
 		text-align: center;
 		width: 100%;
 		// background-color: red;
-		height: 300px;
+
 		.logo-placeholders {
 			// background-color: green;
 			margin-left: auto;
@@ -18,15 +18,29 @@ header {
 			align-items: center;
 			height: 120px;
 			margin-top: 30px;
-
 			.dgpw-img {
 				width: 200px;
 			}
 		}
-		.name-container p{
-			color: $light-text;
-			line-height: 1 !important;
-			margin: 0;
+
+		.name-container {
+			margin-left: auto;
+			margin-right: auto;
+			p {
+				color: $light-text;
+				line-height: 1;
+				margin: 0;
+			}
+
+			p.my-full-name {
+				margin-bottom: $half-gutter;
+				font-size: 1.5rem;
+			}
 		}
+
+
+
+	// head items end
 	}
+// header end
 }
