@@ -29,10 +29,8 @@ header {
 				line-height: 1;
 				margin: 0;
 			}
-
-			p.my-full-name {
-				margin-bottom: $half-gutter;
-				font-size: 1.5rem;
+			p.user-names {
+				font-size: 0.8rem;
 			}
 		}
 	// head items end
@@ -41,18 +39,12 @@ header {
 }
 
 
-nav {
-	width: 100%;
-	a {
-		text-decoration: none;
-	}
-	.menu-items {
-		background-color:#1f1f1f1f;
-		.nav-items {
-			text-align: center;
-		}
-		.nav-items li{
-			padding: 5px $gutter;
+nav{
+	border-bottom: 1px solid black;
+
+	ul {
+		width: 100%;
+		li {
 			list-style: none;
 			display: inline-block;
 		}
