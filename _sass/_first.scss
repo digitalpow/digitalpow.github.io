@@ -1,9 +1,7 @@
 $gutter: 20px;
 $half-gutter: 20px / 2;
-
 header {
 	// header start
-
 	.head-items {
 		text-align: center;
 		width: 100%;
@@ -37,10 +35,26 @@ header {
 				font-size: 1.5rem;
 			}
 		}
-
-
-
 	// head items end
 	}
 // header end
+}
+
+
+nav {
+	width: 100%;
+	a {
+		text-decoration: none;
+	}
+	.menu-items {
+		background-color:#1f1f1f1f;
+		.nav-items {
+			text-align: center;
+		}
+		.nav-items li{
+			padding: 5px $gutter;
+			list-style: none;
+			display: inline-block;
+		}
+	}
 }
