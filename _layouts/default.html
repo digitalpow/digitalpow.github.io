@@ -1,5 +1,6 @@
 ---
 site.title: well
+permalink: index
 ---
 
 <!DOCTYPE html>
@@ -10,8 +11,8 @@ site.title: well
 
 	{% include navigation.html %}
   <section class="content">
-<!--     {{ content }}
- -->  </section>
-<!--   {% include footer.html%}
- --></body>
+  	{{ site.baseurl {% content %} }}
+  </section>
+  {% include footer.html%}
+</body>
 </html>

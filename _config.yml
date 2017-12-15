@@ -17,8 +17,8 @@ title: DGPW - Graphic/UI Designer and Front-End Developer
 email: nick.paatashvili@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio page for graphic designer, UI designer, front-end developer and beerlover from tbilisi, georgia.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dgpw" # the subpath of your site, e.g. /blog
+url: "https://digitalpow.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: digitalpow
 github_username:  digitalpow
 
