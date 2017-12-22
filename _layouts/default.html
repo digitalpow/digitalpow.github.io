@@ -1,18 +1,13 @@
 ---
 site.title: well
-permalink: index
 ---
 
 <!DOCTYPE html>
 <html>
 {% include head.html %}
 <body>
-	{% include header.html %}
-
-	{% include navigation.html %}
-  <section class="content">
-  	{{ site.baseurl {% content %} }}
-  </section>
-  {% include footer.html%}
+	<div class="c-full-space">
+		{% include welcome.html %}
+	</div>
 </body>
 </html>
