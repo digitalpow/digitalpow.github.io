@@ -1,42 +1,4 @@
-$gutter: 20px;
-$half-gutter: 20px / 2;
-
-body {
-	margin: 0 !important;
-	padding: 0 !important;
-}
-
-.c-full-space {
-	width: 100vw;
-	height: 100vh;
-}
-
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	width: 95%;
-}
-
-.row {
-	width: 100%;
-	box-sizing: border-box;
-}
-
-
-header {
-	width: 100%;
-	height: 100px;
+.logo-container-dg {
+	width: 120px;
 	display: block;
-
-	.left-logo-section {
-		height: 100px;
-		float: left;
-		width: 40%;
-
-		img {
-			margin-top: $gutter;
-			height: 60px;
-			width: auto;
-		}
-	}
 }

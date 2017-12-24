@@ -1,0 +1,40 @@
+$main-text: #1D2330;
+$link: #171B26;
+$light-text: #73839B;
+$gutter: 20px;
+$half-gutter: 20px / 2;
+
+
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.full-dg {
+	width: 100vw;
+	height: 100vh;
+	background-color: #DCD9D4;
+ 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ 	background-blend-mode: soft-light,screen;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container-dg {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.centering-flex-dg {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	height: 100vh;
+}
