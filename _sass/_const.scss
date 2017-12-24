@@ -1,6 +1,7 @@
 $main-text: #1D2330;
 $link: #171B26;
 $light-text: #73839B;
+
 $gutter: 20px;
 $half-gutter: 20px / 2;
 
@@ -33,6 +34,7 @@ body {
 
 .centering-flex-dg {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	justify-content: center;
