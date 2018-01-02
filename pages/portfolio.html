@@ -3,5 +3,31 @@ title: Portfolio - DGPW
 permalink: portfolio.html
 ---
 {% include head.html %}
-
-<p>well, you are right</p>
+<div class="full-dg">
+	{% include header.html %}
+	<div class="container-dg">
+		<div class="centering-flex-dg-alt">
+			<div class="portfolio-dg">
+					<ul class="post-uls">
+		  			{% for post in site.posts %}
+		    			<li>
+		    				<a href="{{ post.url }}" class="post-url-title">
+			      			{% assign foundImage = 0 %}
+			      			{% assign images = post.content | split:"<img " %}
+			      				{% for image in images %}
+			        				{% if image contains 'src' %}
+			            		{% if foundImage == 0 %}
+			                	{% assign html = image | split:"/>" | first %}
+			                <img {{ html }} />
+			                {% assign foundImage = 1 %}
+			            		{% endif %}
+			        				{% endif %}
+			      				{% endfor %}
+				      	</a>
+				    	</li>
+		  		{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
