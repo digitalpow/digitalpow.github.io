@@ -6,11 +6,11 @@ permalink: portfolio.html
 <div class="full-dg">
 	{% include header.html %}
 	<div class="container-dg">
-		<div class="centering-flex-dg-alt">
 			<div class="portfolio-dg">
 					<ul class="post-uls">
 		  			{% for post in site.posts %}
-		    			<li>
+						<div>
+							<li>
 		    				<a href="{{ post.url }}" class="post-url-title">
 			      			{% assign foundImage = 0 %}
 			      			{% assign images = post.content | split:"<img " %}
@@ -24,10 +24,10 @@ permalink: portfolio.html
 			        				{% endif %}
 			      				{% endfor %}
 				      	</a>
-				    	</li>
+							</li>
+						</div>
 		  		{% endfor %}
 				</ul>
 			</div>
-		</div>
 	</div>
 </div>

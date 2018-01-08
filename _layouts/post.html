@@ -1,14 +1,13 @@
 {%include head.html%}
-
 <div class="full-dg">
 	{% include header.html %}
-
-	<section>
-		<p>
-			{% if page.title %} {{ page.title }}
-			{% endif %}
-		</p>
-		</div>
-		{{ content }}
-	</section>
+	<div class="full-dg">
+		<section>
+			<p>
+				{% if page.title %} {{ page.title }}
+				{% endif %}
+			</p>
+			{{ content }}
+		</section>
+	</div>
 </div>

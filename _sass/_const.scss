@@ -1,43 +1,121 @@
-$main-text: #1D2330;
-$link: #171B26;
-$light-text: #73839B;
+// Constantas
+	$gutter: 20px;
 
-$gutter: 20px;
-$half-gutter: 20px / 2;
+//
 
 
+* {
+	font-family: $main-font;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	margin: 0 !important;
+	background-color: #f8f4f4;
+}
+
+.nopad {
 	padding: 0 !important;
 }
 
-.full-dg {
-	width: 100vw;
-	min-height: 100vh;
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);	margin:0;
-	padding: 0;
-	box-sizing: border-box;
-	margin: 0 auto;
-}
+// media queries for smaller devices
+@media handheld, only screen and (min-width: 1280px) {
+		.row::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+		}
+		[class*="col-"] {
+		    float: left;
+		    padding: 15px;
+			}
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
 
-.container-dg {
-	width: 100%;
-	max-width: 1280px;
-	margin: 0 auto;
-	overflow: hidden;
-}
+		.container {
+			width: calc(100vw - (141px * 2));
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-.centering-flex-dg {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	justify-content: center;
-	height: 100vh;
-}
+		.center-wrapper {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.image-holder {
+				text-align: center;
+				width: 100%;
+				height: 150px;
 
-.centering-flex-dg-alt {
-	display: flex;
-	justify-content: center;
-}
+				img {
+					height: 100%;
+				}
+			}
+			.identity-holder {
+				width: 100%;
+				text-align: center;
+				line-height: 1.5;
+				font-size: 18px;
+				color: rgba(75,75,75,.4);
+				font-weight: 600;
+				letter-spacing: 1px;
+				pointer-events: none;
+				margin: 30px 0 0 0;
+			}
+			.redline {
+				width: 100%;
+				span {
+					width: 100px;
+					height: 3px;
+					background-color: red;
+					display: block;
+					margin-top: 30px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			.soc-links {
+				width: 100%;
+				text-align: center;
+
+				.soc-container {
+					width: 100%;
+					border: 1px solid black;
+					float: left;
+				}
+				img {
+					width: 20px;
+				}
+				ul {
+					list-style: none;
+					width: 100%;
+					width: 300px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 30px;
+					li {
+						margin: 0 20px;
+						display: block;
+						float: left;
+					}
+				}
+			}
+		}
+	}
