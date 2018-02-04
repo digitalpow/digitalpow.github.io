@@ -1,121 +1,86 @@
-// Constantas
-	$gutter: 20px;
-
-//
-
-
-* {
-	font-family: $main-font;
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-p {
+.grid {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+  min-height: 1px;
+}
+
+[class*='col-'] [class*='col-']:last-child {
+	padding-right: 0;
+}
+
+.col-1 {
+	width: 100%;
+}
+
+.col-half {
+	width: 50%;
+}
+
+
+// main page css
+
+.background {
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
-body {
-	background-color: #f8f4f4;
+.full-h {
+	height: 100vh;
 }
 
-.nopad {
-	padding: 0 !important;
-}
-
-// media queries for smaller devices
-@media handheld, only screen and (min-width: 1280px) {
-		.row::after {
-	    content: "";
-	    clear: both;
-	    display: table;
-		}
-		[class*="col-"] {
-		    float: left;
-		    padding: 15px;
-			}
-		.col-1 {width: 8.33%;}
-		.col-2 {width: 16.66%;}
-		.col-3 {width: 25%;}
-		.col-4 {width: 33.33%;}
-		.col-5 {width: 41.66%;}
-		.col-6 {width: 50%;}
-		.col-7 {width: 58.33%;}
-		.col-8 {width: 66.66%;}
-		.col-9 {width: 75%;}
-		.col-10 {width: 83.33%;}
-		.col-11 {width: 91.66%;}
-		.col-12 {width: 100%;}
-
-		.container {
-			width: calc(100vw - (141px * 2));
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.center-wrapper {
-			width: 100%;
-			height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			.image-holder {
-				text-align: center;
-				width: 100%;
-				height: 150px;
-
-				img {
-					height: 100%;
-				}
-			}
-			.identity-holder {
-				width: 100%;
-				text-align: center;
-				line-height: 1.5;
-				font-size: 18px;
-				color: rgba(75,75,75,.4);
-				font-weight: 600;
-				letter-spacing: 1px;
-				pointer-events: none;
-				margin: 30px 0 0 0;
-			}
-			.redline {
-				width: 100%;
-				span {
-					width: 100px;
-					height: 3px;
-					background-color: red;
-					display: block;
-					margin-top: 30px;
-					margin-left: auto;
-					margin-right: auto;
-				}
-			}
-			.soc-links {
-				width: 100%;
-				text-align: center;
-
-				.soc-container {
-					width: 100%;
-					border: 1px solid black;
-					float: left;
-				}
-				img {
-					width: 20px;
-				}
-				ul {
-					list-style: none;
-					width: 100%;
-					width: 300px;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 30px;
-					li {
-						margin: 0 20px;
-						display: block;
-						float: left;
-					}
-				}
-			}
+.identity {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	p {
+		pointer-events: none;
+		width: 100%;
+		display: block;
+		color: #707070;
+	}
+	.forset {
+		pointer-events: fill;
+		color: #404040;
+		text-decoration: none;
+	}
+	.soc-icons {
+		width: 100%;
+		margin-top: 60px;
+		a {
+			pointer-events: fill;
+			font-size: 1.2rem !important;
+			color: #404040;
+			float: left;
+			margin: 0 20px 0 0;
 		}
 	}
+}

@@ -1,3 +1,22 @@
-$main-font: 'Ubuntu', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
-$font-size-main: 1rem;
+
+* {
+	font-family: 'Noto Serif', serif !important;
+	font-size: 16px;
+}
+
+.auth-name {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	color: #444444 !important;
+
+	span {
+		font-size: 24px;
+	}
+}
+
+.it {
+	font-style: italic;
+}
